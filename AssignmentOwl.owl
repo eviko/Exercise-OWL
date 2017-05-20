@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Performs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Performs">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isPerformedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isPerformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isPerformedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isTakenPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isTakenPlace">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#takesPlace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#takesPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#takesPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artist_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artist_name">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#performer_name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#communication -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#communication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#costs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#costs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isTitled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isTitled">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#performer_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#performer_name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#phone">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#communication"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#starting -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#starting">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#url">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#communication"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Actors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Actors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Singers"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#VisualArtists"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Concert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Concert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Exhibition"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Performance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Theater"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#isPerformedBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#takesPlace"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Exhibition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Exhibition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Performance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Theater"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Performance">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Theater"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Place">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Singers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Singers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#VisualArtists"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Theater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Theater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#VisualArtists -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#VisualArtists">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Artists"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Cure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Cure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Singers"/>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lol Tolhurst</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porl Thompson</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Smith</artist_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Filumena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Filumena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Actors"/>
+        <Performs rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventFilumena"/>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkis Kourkoulos</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dina Avagianou</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eleni Randou</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evgenia Dimitropoulou</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria Diakopanagiotou</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meletis Georgiadis</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vilma Tsakiri</artist_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Pixies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Pixies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Singers"/>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Franci</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Lovering</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joey Santiago</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paz Lenchantin</artist_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Salesman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Salesman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Actors"/>
+        <Performs rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventDeathOfSalesman"/>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alexandros Logothetis</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dimitris Kitsos</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nektaria Yannoudaki</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peggy Stathakopoulou</artist_name>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Petros Filippidis</artist_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_ThomasHope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_ThomasHope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#VisualArtists"/>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thomas Hope</artist_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Αrticulations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Αrticulations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#VisualArtists"/>
+        <artist_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christos Paplomatas</artist_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventCure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventCure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Concert"/>
+        <isPerformedBy rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Cure"/>
+        <takesPlace rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Cure"/>
+        <costs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">99</costs>
+        <isTitled rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Cure</isTitled>
+        <starting rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-18T20:00:00</starting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventDeathOfSalesman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventDeathOfSalesman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Theater"/>
+        <takesPlace rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Salesman"/>
+        <costs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</costs>
+        <isTitled rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Death of a Salesman</isTitled>
+        <starting rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-24T21:00:00</starting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventFilumena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventFilumena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Theater"/>
+        <takesPlace rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Salesman"/>
+        <costs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</costs>
+        <isTitled rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filumena</isTitled>
+        <starting rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-01T21:00:00</starting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventPixies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventPixies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Concert"/>
+        <isPerformedBy rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Pixies"/>
+        <takesPlace rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Pixies"/>
+        <costs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70</costs>
+        <isTitled rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pixies</isTitled>
+        <starting rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-07-18T20:00:00</starting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventThomasHope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventThomasHope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Exhibition"/>
+        <isPerformedBy rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_ThomasHope"/>
+        <takesPlace rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Αrticulations"/>
+        <costs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</costs>
+        <isTitled rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thomas Hope</isTitled>
+        <starting rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-12T21:00:00</starting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventΑrticulations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventΑrticulations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Exhibition"/>
+        <isPerformedBy rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#artists_Αrticulations"/>
+        <takesPlace rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Αrticulations"/>
+        <costs rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free</costs>
+        <isTitled rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Αrticulations</isTitled>
+        <starting rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-07-01T21:00:00</starting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Cure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Cure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mercedes-Platz 1 , Berlin 10243 ,Germany</address>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+491884568758</phone>
+        <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://berlin.eventful.com/events/cure-berlin-/E0-001-089188325-7</url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Pixies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Pixies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Am Juliusturm 64, Berlin 13599 ,Germany</address>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+491884568499</phone>
+        <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://berlin.eventful.com/events/pixies-/E0-001-090893869-5</url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Salesman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Salesman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <isTakenPlace rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#eventThomasHope"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22-24 Agiou Konstadinou,10437 Athens,Greece</address>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2103425369</phone>
+        <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.n-t.gr/en/events/thanatosemporakou/</url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Αrticulations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#venue_Αrticulations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evi/ontologies/2016/5/untitled-ontology-5#Venue"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">138 Pireos street,11854 Athens,Greece</address>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2103616698</phone>
+        <url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.benaki.gr</url>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+
